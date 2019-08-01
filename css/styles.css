@@ -1,0 +1,579 @@
+/* 
+    Created on : 29-07-2019
+    Author     : Mahesh
+*/
+
+
+/* Common Styles */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {  list-style-type: none; }
+
+li {
+  float: left;
+  list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Header */
+.miju-header {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding-top: 35px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Logo */
+.miju-header__logo {
+    width: 15%;
+    height: 50%;
+    float: left;
+    transform: translateY(-40%);
+    opacity: .6;
+    transition: opacity 1s;
+}
+
+.miju-header__logo:hover {
+    opacity: 1;
+}
+
+.miju-header__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.miju-header__get-start {
+    float: right;
+    transition: color .25s;
+}
+
+/* Menu bar */
+.menubar {
+    display: none;
+}
+
+/* Menu */
+.miju-header__menu { float: right; } 
+
+.menu-item {  padding-right:  30px; }
+
+.menu-item:after {
+    content: "";
+    display : block;
+    width: 50%;
+    border-bottom: 2px solid #f009;
+    transition: .5s;    
+    opacity: 0;
+}
+
+.menu-item:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+
+.menu-link {  color: #0049; }
+
+
+.anchor {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color .5s, background .5s;
+}
+
+.anchorh {
+    border: 1px solid #f00;
+    color: #f009;
+    background: #fff;
+    text-decoration: none;
+}
+
+.anchorh:hover {
+    color: #fff;
+    background: #f009;
+}
+
+/* Main Content */
+.miju-app {
+    width: 100%;
+    height: 600px;
+}
+
+.main-content {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 10% 0 0;
+}
+
+.content-head {
+    width: 90%;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.content-info {
+    margin: 5% 0;
+    width: 75%;
+    color:#777;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.more {
+    background: #e00;
+    margin-right: 30px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: opacity 1s;
+    opacity: 1;
+}
+.download {
+    display: inline-block;
+    width: 127px;
+    background-image: url(../images/download.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 52%;
+
+}
+.more:hover {  opacity: .8; }
+
+.content-play {
+    padding-right: 30px;
+    background-image: url(../images//playvideo.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    border: 1px solid;
+}
+
+.content-play:hover { color:#f00; }
+
+/* Content Figure */
+.main-content-figure {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.main-content-figure img {
+    width: 150%;
+    height: 100%;
+}
+
+/* Features */
+.features {
+    width: 100%;
+    height: 500px;
+    padding: 50px 0 0;
+}
+
+.features-head {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    opacity: .8;
+}
+.features-item {
+    display: flex;
+    height: 60%;
+    margin-top: 75px;
+    align-content: space-around;
+}
+
+.item {
+    flex: 1;
+    height: 100%;
+    padding: 0 30px;
+    text-align: center;
+
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+}
+
+.item h4 {
+    font-size: 15px;
+    color: #0059;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.item p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #559;
+    margin: 10px 0 0; 
+}
+
+.aline {
+    text-align: center;
+    margin: 50px auto 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* What Makes */
+.makes-us {
+    width: 100%;
+    height: 700px;
+    background-image: url(../images/footer-2.png);
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    background-position: 90% 100%;
+    z-index: 9;
+}
+
+.what-makes {
+    width: 40%;
+    height: 100%;;
+    padding-top: 30%;
+    float: right;
+}
+
+.what-makes span {
+    font-size: 14px;
+    color: #f00;
+    line-height: 2.5;
+}
+.what-makes h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.what-makes p {
+    margin: 20px 0 0;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #999;
+}
+
+.learnmore {
+    display: inline-block;
+    margin-top:50px;
+    border: 1px solid;
+}
+
+.learnmore:hover{
+    color: #f00;
+}
+
+/* Business To Grow */
+.business {
+    width: 100%;
+    height: 600px;
+}
+
+.business-content {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.business-content h2 {
+    font-size: 40px;
+}
+
+.hide-content, #hide {
+    display: none;
+    opacity:1;
+    transition: opacity 1s;
+}
+
+/* Business Trend */
+.business-trend {
+    width: 50%;
+    height: 80%;
+    margin: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trend-item {
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+
+/* Counter */
+.miju-counter {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+.counter-inner {
+    height: 75%;
+    display: flex;
+}
+
+.counter-item {
+    flex: 1;
+    padding: 40px ;
+    margin: 10px;
+    background-image: linear-gradient(#b9c5d861, #e1839447);
+    border-radius: 30px;
+    box-shadow: 0 0 3px 2px #aaaaaa4a;
+}
+
+.counter-item h2 {
+    font-size: 40px;
+}
+
+.counter-item h2:after {
+    content: "";
+    display: block;
+    width: 15px;
+    margin: 15px auto;
+    border-bottom: 2px solid red;
+}
+
+/* Minimum Width 1120px */
+@media only screen and (min-width: 1120px){
+    .wraper {
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;  
+    }
+}
+
+/* Minum Width: 768px and Max Width: 1120px */
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
+    .wraper{
+        padding: 0 30px;
+    }
+
+    .main-content-figure img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .business-trend {
+        width: 50%;
+        height: 100%;
+        margin: 20px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .trend-item {
+        width: 50%;
+        height: 50%;
+        float: left;
+    }
+
+    .item {
+        padding: 0 37px;
+    }
+    
+}
+
+/*  Max Width: 768px  */
+@media only screen and (max-width:768px){
+
+    .wraper {
+        padding: 10px;
+    }
+
+    .miju-header {
+        height: 40px;
+        padding: 10px 0 0;
+    }
+
+    .miju-header__get-start {
+        display: none;
+    }
+
+    .miju-header__menu {
+        display: none;
+        position: absolute;
+        top: 45px;
+        right: 8px;
+        width: 81px;
+        background: #fff;
+    }
+
+    .menu-item {
+        clear: both;
+        padding: 5px 10px;
+    }
+
+    .menubar {
+        display: block;
+        position: absolute;
+        right: 8px;
+        top: 10px;
+    }
+
+    .miju-app {
+        height: 800px;
+        text-align: center;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 5% 0;
+    }
+
+    .main-content-figure {
+        width: 100%;
+        height: 50%;
+    }
+
+    .main-content-figure img {
+        width: 100%;
+    }
+    .features { height: 750px; }
+
+    .features-item {
+        display: block;
+        width: 100%;
+        height: 30%;
+        margin-top: 10px;
+    }
+    
+    .item { padding: 10px 30px; }
+
+    .makes-us  { 
+        height: 600px;
+        background-size: 120% 100%;
+    }
+
+    .what-makes { width: 60%; }
+
+
+    /* Business */
+    .business {
+        height: auto;
+    }
+
+    .business-content {
+        width: 100%;
+    } 
+    
+    .business-trend {
+        display: inline-block;
+        width: 100%;
+    }    
+
+    .trend-item {
+        width: 100%;
+        height: 200px;
+    }
+
+   .counter-inner {
+        display: block;
+    }
+
+    .counter-item {
+        height: 175px;    
+    }
+}
+
